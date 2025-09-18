@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Main title */
+.main-title {
+  color: black;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Layout using Flexbox */
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Left Menu */
+.left-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-menu button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.left-menu button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Center Content */
+.center-content {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.highlight {
+  color: black;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  width: 200px;
+}
+
+.sidebar h2 {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.sidebar p {
+  color: white;
+  padding-bottom: 10px;
+}
+
+/* No Style Section */
+.no-style-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.no-style-section h3 {
+  color: black;
+}
