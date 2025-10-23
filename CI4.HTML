@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechFest 2025 Registration</title>
+<style>
+	body {
+		font-family: 'Poppins', sans-serif;
+		margin: 0;
+		padding: 0;
+		background: linear-gradient(135deg, #6a11cb, #2575fc);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+	.container {
+		background: rgba(255, 255, 255, 0.9);
+		padding: 40px 50px;
+		border-radius: 16px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+		width: 90%;
+		max-width: 700px;
+		backdrop-filter: blur(8px);
+	}
+	h1 {
+		text-align: center;
+		color: #222;
+		font-size: 36px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		text-align: center;
+		color: #666;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+	}
+	label {
+		font-size: 16px;
+		font-weight: 600;
+		color: #333;
+		margin-bottom: 5px;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		width: 100%;
+		padding: 10px 14px;
+		font-size: 16px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		outline: none;
+		transition: 0.3s;
+	}
+	input:focus, select:focus, textarea:focus {
+		border-color: #6a11cb;
+		box-shadow: 0 0 6px rgba(106, 17, 203, 0.4);
+	}
+	textarea {
+		resize: vertical;
+		min-height: 80px;
+	}
+	.options {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		align-items: center;
+	}
+	input[type="radio"], input[type="checkbox"] {
+		accent-color: #6a11cb;
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+	.buttons {
+		text-align: center;
+		margin-top: 10px;
+	}
+	input[type="submit"],
+	input[type="reset"] {
+		background: linear-gradient(135deg, #6a11cb, #2575fc);
+		color: white;
+		padding: 12px 30px;
+		font-size: 18px;
+		font-weight: 600;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: 0.3s;
+		margin: 5px;
+	}
+	input[type="submit"]:hover,
+	input[type="reset"]:hover {
+		transform: scale(1.05);
+		box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+	}
+	@media (max-width: 600px) {
+		.container {
+			padding: 30px 25px;
+		}
+		h1 {
+			font-size: 28px;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>TechFest 2025</h1>
+		<h3>Student Event Registration Form</h3>
+		<form action="#" method="post">
+			<label>Full Name</label>
+			<input type="text" name="fullname" placeholder="Enter your full name" required>
+
+			<label>USN (University Seat Number)</label>
+			<input type="text" name="usn" placeholder="Enter your USN" required>
+
+			<label>Section</label>
+			<input type="text" name="section" placeholder="Enter your section (e.g., A/B/C)" required>
+
+			<label>Year of Study</label>
+			<select name="year" required>
+				<option value="">-- Select Year --</option>
+				<option value="1st">1st Year</option>
+				<option value="2nd">2nd Year</option>
+				<option value="3rd">3rd Year</option>
+				<option value="4th">4th Year</option>
+			</select>
+
+			<label>Email</label>
+			<input type="email" name="email" placeholder="Enter your email" required>
+
+			<label>Phone Number</label>
+			<input type="tel" name="phone" placeholder="Enter your contact number" required>
+
+			<label>Gender</label>
+			<div class="options">
+				<label><input type="radio" name="gender" value="male"> Male</label>
+				<label><input type="radio" name="gender" value="female"> Female</label>
+				<label><input type="radio" name="gender" value="other"> Other</label>
+			</div>
+
+			<label>College Name</label>
+			<input type="text" name="college" placeholder="Enter your college name" required>
+
+			<label>Department</label>
+			<select name="department" required>
+				<option value="">-- Select Department --</option>
+				<option value="cse">Computer Science</option>
+				<option value="ece">Electronics</option>
+				<option value="mech">Mechanical</option>
+				<option value="civil">Civil</option>
+				<option value="it">Information Technology</option>
+			</select>
+
+			<label>Events Interested</label>
+			<div class="options">
+				<label><input type="checkbox" name="events" value="coding"> Coding Challenge</label>
+				<label><input type="checkbox" name="events" value="quiz"> Tech Quiz</label>
+				<label><input type="checkbox" name="events" value="presentation"> Paper Presentation</label>
+				<label><input type="checkbox" name="events" value="gaming"> Gaming</label>
+			</div>
+
+			<label>Address</label>
+			<textarea name="address" placeholder="Enter your address"></textarea>
+
+			<div class="buttons">
+				<input type="submit" value="Register">
+				<input type="reset" value="Reset">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
