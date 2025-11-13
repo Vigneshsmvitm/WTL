@@ -1,0 +1,7 @@
+create database students12;
+use students12;
+create table students1233 (id int primary key , name varchar(50) , grade float);
+
+insert into students1233 values (1,"Vignesh Kumar",10);
+insert into students1233 values (2,"Deepak",1);
+insert into students1233 values (3,"V JET",5);
